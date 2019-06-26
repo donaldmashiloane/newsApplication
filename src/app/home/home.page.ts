@@ -12,6 +12,8 @@ export class HomePage {
 
   constructor(private apiService: ApiService){}
 
+
+  // Method that call the getNews() method of ApiService to retrieve the news
   ionViewDidEnter(){
     this.apiService.getNews().subscribe((data)=>{
       console.log(data);
